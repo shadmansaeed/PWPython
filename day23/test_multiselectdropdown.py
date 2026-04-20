@@ -8,17 +8,7 @@ def test_multi_select_dropdown(page: Page):
 
     # select multiple options from the dropdown - 3 ways
 
+    #page.locator("#colors").select_option(["Red", "Blue", "Green"])   # by label
+    page.locator("#colors").select_option(label=["Red", "Blue", "Green"])  # by label
 
-
-    page.wait_for_timeout(5000)
-
-
-
-
-
-
-
-
-
-
-
+    page.wait_for_timeout(4000)
