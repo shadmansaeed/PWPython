@@ -16,7 +16,7 @@ def test_multi_select_dropdown(page: Page):
     #page.locator("#colors").select_option(index=[2, 4])   # by index
 
     dropdown_options=page.locator("#colors>option")
-    expect(dropdown_options).to_have_count(7)
+    expect(dropdown_options).to_have_count(7 )
 
     options_text = [text.strip() for text in dropdown_options.all_text_contents()]
     print(options_text)
