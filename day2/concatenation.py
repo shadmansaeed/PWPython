@@ -14,5 +14,5 @@ print(False+5)   # 5
 print(True+True)  # 2
 
 # 4 we cannot concatenate 2 different types
-print(10+"welcome")   # not valid because 2 values are different type
-
+print(10+"welcome")     # not valid because 2 values are different type
+print(True+'welcome')  # not valid because 2 values are different type # type error
